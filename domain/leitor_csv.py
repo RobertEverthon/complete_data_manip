@@ -18,7 +18,7 @@ class LeitorCSV:
 
         :returns dados: dados do arquivo csv
         """
-        with open(self.caminho_arquivo, "r", encoding="utf-8") as arquivo:
+        with open(self.caminho_arquivo, "r", encoding="latin-1") as arquivo:
             leitor = csv.reader(arquivo, delimiter=";")
 
             # Ignora cabeçalho
